@@ -2,29 +2,40 @@
 
 namespace Prac4
 {
-    class Animal
+    class furniture
     {
-        public void eat()
+        public string material;
+        public int price;
+
+        public void getFurnitureInfo()
         {
-            Console.WriteLine("Eating");
+            Console.WriteLine(material + " " + price);
+        }
+        
+    }
+
+    class Table : furniture
+    {
+        public int height;
+        public int surface;
+        public void getTableFurniture()
+        {
+            Console.WriteLine(height + " " + surface);
         }
     }
-    class Dog : Animal
-    {
-        public void bark()
-        {
-            Console.WriteLine("Barking");
-        }
-    }
+    
     class Program
     {
         static void Main(string[] args)
         {
-            Animal animal1 = new Animal();
-            Dog dog1 = new Dog();
-            dog1.eat();
-            dog1.bark();
-            
+            furniture f1 = new furniture();
+            Table t1 = new Table();
+            t1.material = "Wood";
+            t1.price = 500;
+            t1.height=120;
+            t1.surface = 21;
+            Console.WriteLine(t1.material+" "+ t1.price+ " " + t1.height+ " " + t1.surface);
+
         }
     }
 }
