@@ -1,6 +1,7 @@
 ﻿using System;
 
 namespace Prac4
+
 {
     class furniture
     {
@@ -24,6 +25,26 @@ namespace Prac4
         }
     }
     
+    class Employee
+    {
+        string Name;
+        int basicSalary;
+        public Employee(string name,int basicSalary)
+        {
+            this.Name = Name;
+            this.basicSalary = basicSalary;
+
+        }
+        public void getInfo()
+        {
+            Console.WriteLine("Name:" + Name + "Basic Salary:" + basicSalary);
+        }
+    }
+
+    interface gross
+    {
+        int getGrossSalaray(int basicSal);
+    }
     class Program
     {
         static void Main(string[] args)
