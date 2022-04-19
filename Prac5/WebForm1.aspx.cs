@@ -16,7 +16,7 @@ namespace Prac5
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            int num = int.Parse(getNum.Text);
+            int num = Int32.Parse(getNum.Text);
             int n, rev = 0, d;
             n = num;
             while (n > 0)
@@ -28,11 +28,11 @@ namespace Prac5
             }
             if (rev == num)
             {
-                resultLabel.Text = "Is a palimdrome";
+                resultLabel.Text = num+" Is a palimdrome";
             }
             else
             {
-                resultLabel.Text = "not a plalindrome";
+                resultLabel.Text = num+" not a plalindrome";
             }
         }
     }
