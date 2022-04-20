@@ -17,12 +17,13 @@
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="AddButton" runat="server" Text="Add" />
+            <asp:Button ID="AddButton" runat="server" Text="Add" OnClick="AddButton_Click" />
 &nbsp;&nbsp;
-            <asp:Button ID="MultiplyButton" runat="server" Text="Multiply" />
+            <asp:Button ID="MultiplyButton" runat="server" Text="Multiply" OnClick="MultiplyButton_Click" />
             <br />
             <br />
             <asp:Label ID="resullLabel" runat="server"></asp:Label>
+            <br />
         </div>
     </form>
 </body>
