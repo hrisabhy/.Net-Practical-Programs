@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="masterpage.Site1" %>  
+  
+<!DOCTYPE html>  
+  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+    <title>c# corner</title>  
+    <link href="css/my.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+</head>  
+<body>  
+    <!DOCTYPE html>  
+    <form id="form1" runat="server">  
+      
+<html>  
+<head>  
+    <title>my layout</title>  
+    <link rel="stylesheet" type="text/css" href="my.css">  
+</head>  
+<body>  
+<header id="header">  
+<h1>MY WEBSITE</h1>  
+</header>  
+<nav id="nav">  
+    <ul>  
+        <li><a href="home.aspx">Home</a></li>  
+        <li><a href="about_us.aspx">About</a></li>  
+        <li><a href="#">Article</a></li>  
+        <li><a href="contact_us.aspx">Contact</a></li>  
+    </ul>  
+</nav>  
+<aside id="side">  
+    <h1>news</h1>  
+    <a href="#"><p>creating html website</p></a>  
+    <a href="#"><p>learn css</p></a>  
+    <a href="#">learn c#</a>  
+</aside>  
+  
+  
+    <div id="con">  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+          
+            <div>
+            </div>
+          
+        </asp:ContentPlaceHolder>  
+    </div>  
+  
+  
+<footer id="footer">  
+    copyright @hrisabhy
+</footer>  
+</body>  
+</html>  
+      
+    </form>  
+</body>  
+</html>  
